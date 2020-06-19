@@ -25,7 +25,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/Users/Emma/Projects/Dummy_Website/IMG_0734 3.jpg");
+  background-image: url("IMG_0734\ 3.jpg");
   background-size: cover;
   height: 500px;
   text-shadow: 2px 2px 2px #000000;
