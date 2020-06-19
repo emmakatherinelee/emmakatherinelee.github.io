@@ -75,7 +75,6 @@ a {
 }
 
 .container {
-  border: .5px dotted hsla(0, 0%, 60%, 1);
   align-items: center;
   justify-content: center;
 }
