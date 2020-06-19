@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+header{
+position: fixed;
+align-items: center;
+justify-content: center;
+}
+
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    background-color:#FFF
+}
+
+.jumbotron{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/Users/Emma/Projects/Dummy_Website/IMG_0734 3.jpg");
+  background-size: cover;
+  height: 500px;
+  text-shadow: 2px 2px 2px #000000;
+  color: hsla(0, 0%, 100%, 1)
+}
+ 
+.jumbotron h1 {
+  word-spacing: 8px;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff !important;
+}
+
+.jumbotron h2 {
+  word-spacing: 10px;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff !important;
+ 
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+
+}
+
+ul {
+  list-style: none;
+}
+p {
+    font-size: 18px;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.container {
+  border: .5px dotted hsla(0, 0%, 60%, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+.share {
+    border: 1px solid LightGrey;
+    padding: 10px 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+  
+section {
+  padding: 20px;
+}
+
+/*NAVIGATION*/
+.navigation{
+  width: 100%;
+  min-width: 900px;
+  background-color: hsla(0, 0%, 80%, .9);
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: left;
+
+}
+.navigation .nav-link {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .navigation .nav-link:hover {
+  background-color: hsla(0, 0%, 60%, 1);
+}
+
+.navigation .nav-link a{
+  margin: 0;
+  text-align: center;
+}
+
+#EKL-link {
+  float:left;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 12px;
+
+}
+
+/*ABOUT*/
+#about{
+  background-color: rgb(106, 118, 153);
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.about-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1%;
+}
+
+#headshot {
+  height: 300px;
+}
+
+#about-blurb {
+ min-width: 200px;
+ max-width: 400px;
+ text-align: justify;
+ line-height: 150%;
+}
+
+/*EXPERIENCE*/
+#experience {
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  max-width: 900px;
+}
+
+.experience-item{
+  padding: 20px 10px;
+  
+}
+.experience-title, .experience-company{
+  float: left;
+}
+
+.experience-company, .experience-time {
+  font-size: .9em;
+}
+
+.experience-location, .experience-time {
+  float: right;
+}
+
+.experience-responsibilities{
+  padding: 5px 5%;
+  list-style-type: disc;
+  text-align: left;
+  font-size: .9em;
+}
+
+/*EDUCATION*/
+
+/*ABILITIES*/
+#abilities {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(106, 118, 153);
+  color: hsla(0, 0%, 100%, 1);
+}
+
+#abilities-grid{
+    display: grid;
+    width: 72%;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-areas: "left-skill deadspace right-skill";
+    grid-template-columns: 240px 1fr 240px;
+}
+
+.ability-name {
+  float: left;
+  font-size: 14px;
+}
+
+.ability-rank {
+  float: right;
+  font-size: 14px;
+  
+}
+#abilities-left{
+  grid-area: left-skill;
+  text-align: left;
+  line-height: 1.6;
+  
+}
+
+#abilities-right {
+  grid-area:right-skill;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/*FOOTER*/
+
+#contactinfo a{
+  color: black;
+}
