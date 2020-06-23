@@ -22,9 +22,13 @@ html, body {
     font-size: 1.1em !important;
 }
 
-.carousel-link img {
+.carousel-inner {
+    max-height: 500px;
+    min-height: auto;
+}
+.carousel-inner img {
+    object-fit: cover;
     width: 100%;
-    height: 100%;
 }
 
 .carousel-caption {
@@ -55,6 +59,7 @@ html, body {
     background-color: #563d7c;
     border: 1px solid #563d7c;
 }
+
 
 .jumbotron {
     padding: 1rem;
