@@ -54,15 +54,13 @@ html, body {
   padding-bottom: 1rem;
 }
 
-.btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #563d7c;
+.main-text {
+  position: absolute;
+  top: 33%;
+  width: 96.66666666666666%;
+  color: #FFF;
 }
 
-.btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
-}
 
 .padding {
   padding-top: 1rem;
@@ -92,22 +90,6 @@ section {
   color: hsla(0, 0%, 100%, 1);
 }
 
-.about-item {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 1%;
-}
-
-#headshot {
-  height: 300px;
-}
-
-#about-blurb {
- min-width: 200px;
- max-width: 400px;
- text-align: justify;
- line-height: 150%;
-}
 
 /*EXPERIENCE*/
 #experience {
@@ -143,16 +125,18 @@ section {
   justify-content: center;
   background-color: rgb(106, 118, 153);
   color: hsla(0, 0%, 100%, 1);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .ability-name {
   float: left;
-  padding-left: 4rem;
+  padding-left: 10%;
 }
 
 .ability-rank {
   float: right; 
-  padding-right: 4rem;
+  padding-right: 10%;
 }
 
 .ability-positive, .ability-pos {
