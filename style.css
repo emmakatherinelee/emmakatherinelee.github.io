@@ -120,6 +120,16 @@ section {
 
 /*EDUCATION*/
 
+.edu-item {
+  border: indianred;
+  border-width: 5px;
+  margin: 2%;
+}
+
+.edu-logo {
+  padding: 2%;
+}
+
 /*ABILITIES*/
 #abilities {
   align-items: center;
@@ -197,7 +207,9 @@ section {
           font-size: 2.5em;
           padding:  1.2rem;
       }
-  
+      .card-text {
+        display: none;
+      }
   }
   
   
@@ -230,6 +242,10 @@ section {
       .social a {
           font-size: 2rem;
           padding: .7rem;
+      }
+
+      .card-text {
+        display: none;
       }
   }
   
