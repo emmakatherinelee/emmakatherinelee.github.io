@@ -95,9 +95,9 @@ section {
 /*EXPERIENCE*/
 #experience {
   align-items: center;
-  align-content: center;
-  margin: auto;
-  max-width: 900px;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .experience-item{
@@ -120,9 +120,15 @@ section {
 
 /*EDUCATION*/
 
-.card-img-top {
-  padding: 2%;
-  max-width: 400px;
+#education {
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#education a {
+  color: black;
 }
 
 /*ABILITIES*/
@@ -213,7 +219,7 @@ section {
   }
   
   @media (min-width: 576px) {
-    .more-info{
+    .edu-more-info{
       display: none;
       padding: 0px;
     }
