@@ -148,12 +148,10 @@ section {
 
 .ability-name {
   float: left;
-  padding-left: 10%;
 }
 
 .ability-rank {
   float: right; 
-  padding-right: 10%;
 }
 
 .ability-positive, .ability-pos {
@@ -228,6 +226,15 @@ section {
       display: none;
       padding: 0px;
     }
+
+    .ability-name {
+      padding-left: 5%;
+    }
+    
+    .ability-rank { 
+      padding-right: 5%;
+    }
+
   }
 
   @media (max-width: 576px) {
