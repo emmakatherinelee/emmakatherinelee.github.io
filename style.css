@@ -111,7 +111,17 @@ section {
 
 /*ABOUT*/
 
+#headshot {
+  vertical-align: middle;
+  object-fit: contain;
+}
 
+#about .row > div img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  vertical-align: middle;
+}
 
 /*EXPERIENCE*/
 .sticky {
