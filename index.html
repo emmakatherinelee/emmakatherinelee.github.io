@@ -8,10 +8,10 @@
 
 
     <!--STYLE SHEETS-->
-    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-
+    <link rel="stylesheet" href="style.css">
     <!--Scripts?-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -30,577 +30,625 @@
 </head>
 
 <body>
-    <!--NAVIGATION BAR-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#slides" id="EKL-link">EKL</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#abilities">Abilities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#connect">Connect</a>
-                    </li>
+    <div class="content" style="overflow: hidden;">
+        <div class="bootstrap-content">
+            <div id="cascade-bar-fuschia"></div>
+            <div id="cascade-bar-lime"></div>
+            <div id="cascade-bar-cyan"></div>
+            <!--NAVIGATION BAR-->
+            <nav class="navbar navbar-expand-md fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#slides" id="EKL-link">EKL</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#abilities">Abilities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#connect">Connect</a>
+                            </li>
 
 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- IMAGE SLIDER -->
+            <div id="slides" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="pictures/IMG_0734 3.jpg" height=500px>
+                        <div class="carousel-caption">
+                        </div>
 
-    <!-- IMAGE SLIDER -->
-    <div id="slides" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#slides" data-slide-to="0" class="active"></li>
-            <li data-target="#slides" data-slide-to="1"></li>
-            <li data-target="#slides" data-slide-to="2"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="pictures/IMG_0734 3.jpg" height=500px>
-                <div class="carousel-caption">
-                </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/RedPainting.jpeg" height=500px>
+                    </div>
 
-            </div>
-            <div class="carousel-item">
-                <img src="pictures/RedPainting.jpeg" height=500px>
-            </div>
+                    <div class="carousel-item">
+                        <img src="pictures/LaserCutHorse.jpeg" height=500px>
+                    </div>
 
-            <div class="carousel-item">
-                <img src="pictures/LaserCutHorse.jpeg" height=500px>
-            </div>
-
-            <div class="main-text">
-                <div class="col-md-12 text-center">
-                    <h1 class="display-2" style="font-weight: 600;">Emma K Lee</h1>
-                    <h3>Mechanical Engineer</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ABOUT -->
-    <section class="container-fluid padding" id="about">
-        <div class="row padding d-flex flex-wrap align-items-center">
-            <div class="col-xs-12 col-md-7">
-                <h2>Hello, I'm Emma...</h2>
-                <p>and welcome to my website. I am a mechanical engineer by trade, but with the COVID-19 pandemic and
-                    stay-at-home orders, I have some time on my hands that I normally wouldn't. So, I made this website
-                    as a way to advertise myself but also to see if I could: an experiment to see if I could learn the
-                    basics of HTML and CSS on my own and build a website with nothing but a domain name and the
-                    internet.
-                    And here we are!</p>
-            </div>
-
-
-            <div class="col-md-5 text-center"> 
-                <img src="pictures/Headshot.jpg" id="headshot" width="300px" height="300px" style="border-radius:4px">
-            </div>
-        </div>
-    </section>
-
-    <!-- PROFESSIONAL EXP -->
-    <section id="experience" class="container-fluid padding">
-        <h2 class="text-center">Experience</h2>
-
-        <!--System Engineer @ Disney-->
-        <div class="row padding">
-            <div class="text-center col-sm-4 padding">
-                <div class="text-center text-sm-left sticky">
-                    <div class="exp-essential">
-                        <h5>Systems Engineering Professional Intern</h5>
-                        <h6>The Walt Disney Company - Modeling, Simulation and Training Tools</h6>
-                        <h6>January 2020 - April 2020</h6>
-                        <h6>Glendale, CA</h6>
+                    <div class="main-text">
+                        <div class="col-md-12 text-center">
+                            <h1 class="display-2" style="font-weight: 600;">Emma K Lee</h1>
+                            <h3>Mechanical Engineer</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-8 padding">
-                <div class="job-summary">
-                    <div class="text-justify">
-                        <p> While a Mechanical Engineering Intern in the MS&TT team the prior year,
-                            I showed a knack and interest for
-                            programming and software development, so my leadership encouraged me explore this
-                            more in the role of Systems Engineering Intern. In this role, I primarily worked
-                            on developing ride models in Visual Studio for embedded systems upgrades and control
-                            logic testing. I also performed data and measurement collection, learned some ladder logic,
-                            and gained exposure to HIL. Unfortunately, my internship was cut short of the intended
-                            six-months
-                            due to company closures. However, before I left I provided detailed documentation and a few
-                            code reviews
-                            of my work.
-                        </p>
-                    </div>
-                    <p><a class="more-info" data-toggle="collapse" data-target="#DIS-sys-summary"> <u>Click here to
-                                see a list of my day-to-day responsibilities</u></a></p>
 
-                </div>
-                <div id="DIS-sys-summary" class="collapse">
-                    <div class="text-left">
-                        <ul class="experience-responsibilities">
-                            <li>Developed the software model for an existing attraction's Hardware-in-the-Loop simulator
-                                used in
-                                preparation for a PLC upgrade </li>
-                            <li>Authored event-driven C# code in Visual Studio to simulate the attraction's Wayside Ride
-                                Control
-                                logic, including creating custom classes for representing physical ride components</li>
-                            <li>Worked with partners from the Disneyland Ride Control Team in order to deliver a
-                                user-friendly
-                                product that also fulfilled specific client requirements and feature requests </li>
-                            <li>Translated outdated drawings and interpreted project documentation from SmarTeam into
-                                current
-                                simulation development environment</li>
-                            <li>Successfully worked in a cross-functional team using exclusively telecommunication to
-                                accommodate
-                                for limitations due to location and work-from-home requirements</li>
-                        </ul>
+            <!-- ABOUT -->
+            <section class="container-fluid padding" id="about">
+                <div class="row padding d-flex flex-wrap align-items-center">
+                    <div class="col-xs-12 col-md-7">
+                        <h2>Hello, I'm Emma...</h2>
+                        <p>and welcome to my website. I am a mechanical engineer by trade, but with the COVID-19
+                            pandemic
+                            and
+                            stay-at-home orders, I have some time on my hands that I normally wouldn't. So, I made this
+                            website
+                            as a way to advertise myself but also to see if I could: an experiment to see if I could
+                            learn
+                            the
+                            basics of HTML and CSS on my own and build a website with nothing but a domain name and the
+                            internet.
+                            And here we are!</p>
+                    </div>
+
+
+                    <div class="col-md-5 text-center">
+                        <div class="headshot-container">
+                            
+                            <img src="pictures/Headshot.jpg" id="headshot" style="border-radius:4px;">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>
+            </section>
 
-        <!--Mech Engineer @ Disney-->
-        <div class="row padding">
-            <div class="text-center col-sm-4 padding">
-                <div class="text-center text-sm-left sticky">
-                    <div class="exp-essential">
-                        <h5>Mechanical Engineering Professional Intern</h5>
-                        <h6>The Walt Disney Company - Modeling, Simulation and Training Tools</h6>
-                        <h6>June 2019 - January 2020</h6>
-                        <h6>Glendale, CA</h6>
+            <!-- PROFESSIONAL EXP -->
+            <section id="experience" class="container-fluid padding">
+                <h2 class="text-center">Experience</h2>
+
+                <!--System Engineer @ Disney-->
+                <div class="row padding">
+                    <div class="text-center col-sm-4 padding">
+                        <div class="text-center text-sm-left sticky">
+                            <div class="exp-essential">
+                                <h5>Systems Engineering Professional Intern</h5>
+                                <h6>The Walt Disney Company - Modeling, Simulation and Training Tools</h6>
+                                <h6>January 2020 - April 2020</h6>
+                                <h6>Glendale, CA</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 padding">
+                        <div class="job-summary">
+                            <div class="text-justify">
+                                <p> While a Mechanical Engineering Intern in the MS&TT team the prior year,
+                                    I showed a knack and interest for
+                                    programming and software development, so my leadership encouraged me explore this
+                                    more in the role of Systems Engineering Intern. In this role, I primarily worked
+                                    on developing ride models in Visual Studio for embedded systems upgrades and control
+                                    logic testing. I also performed data and measurement collection, learned some ladder
+                                    logic,
+                                    and gained exposure to HIL. Unfortunately, my internship was cut short of the
+                                    intended
+                                    six-months
+                                    due to company closures. However, before I left I provided detailed documentation
+                                    and a
+                                    few
+                                    code reviews
+                                    of my work.
+                                </p>
+                            </div>
+                            <p><a class="more-info" data-toggle="collapse" data-target="#DIS-sys-summary"> <u>Click here
+                                        to
+                                        see a list of my day-to-day responsibilities</u></a></p>
+
+                        </div>
+                        <div id="DIS-sys-summary" class="collapse">
+                            <div class="text-left">
+                                <ul class="experience-responsibilities">
+                                    <li>Developed the software model for an existing attraction's Hardware-in-the-Loop
+                                        simulator
+                                        used in
+                                        preparation for a PLC upgrade </li>
+                                    <li>Authored event-driven C# code in Visual Studio to simulate the attraction's
+                                        Wayside
+                                        Ride
+                                        Control
+                                        logic, including creating custom classes for representing physical ride
+                                        components
+                                    </li>
+                                    <li>Worked with partners from the Disneyland Ride Control Team in order to deliver a
+                                        user-friendly
+                                        product that also fulfilled specific client requirements and feature requests
+                                    </li>
+                                    <li>Translated outdated drawings and interpreted project documentation from SmarTeam
+                                        into
+                                        current
+                                        simulation development environment</li>
+                                    <li>Successfully worked in a cross-functional team using exclusively
+                                        telecommunication
+                                        to
+                                        accommodate
+                                        for limitations due to location and work-from-home requirements</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-8 padding">
-                <div class="job-summary">
-                    <div class="text-justify">
-                        <p>Right out of college, I moved from PA to CA to join the MS&TT team.
-                            I spent most of my days working in SolidWorks, MATLAB, and Simscape
-                            developing and analyzing kinematics models of animatronic figures.
-                            While supporting figures through the analysis pipeline,
-                            I worked with talented engineers across Disney, presented my findings at design reviews,
-                            and improved the pipeline by authoring programs to streamline the
-                            kinematic analysis process.
-                        </p>
-                    </div>
-                    <p>
-                        <a class="more-info" data-toggle="collapse" data-target="#DIS-mech-resp">
-                            <u>Click here to see a list of my day-to-day responsibilities</u>
-                        </a>
-                    </p>
-                </div>
-                <div id="DIS-mech-resp" class="collapse">
-                    <div class="text-left">
-                        <ul class="experience-responsibilities">
-                            <li>Improved rigid body dynamics analysis pipeline by authoring scripts and functions for
-                                MATLAB and Simscape to increase efficiency and enhance the user experience</li>
-                            <li>Interfaced with product users and developers to investigate root cause of
-                                user-identified problems in an in-house process and product suite that facilitate the
-                                creation and sharing of an
-                                animatronic’s kinematic definition across multiple disciplines and software programs
-                            </li>
-                            <li>Coordinated with 3 external vendors and in-house animators, mechanical designers, and
-                                controls
-                                programmers to support production of show figures</li>
-                            <li>Developed kinematics models from SolidWorks files to simulate and analyze rigid body
-                                dynamics
-                                and
-                                inform mechanical design of over 12 animatronic figures</li>
-                            <li>Completed code generation of dynamic-link libraries and TwinCAT Component Object Models
-                                from the
-                                animatronic kinematics models using Simulink</li>
-                            <li>Co-authored best practices and guidelines for technical communications and deliverables
-                            </li>
-                            <li>Authored and maintained detailed documentation for assumptions, model initialization
-                                parameters,
-                                and
-                                processes for the project</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
 
-        <!-- Mech Design Engineer @ TAIT -->
-        <div class="row padding">
-            <div class="text-center col-sm-4 padding">
-                <div class="text-center text-sm-left sticky">
-                    <div class="exp-essential">
-                        <h5>Mechanical Design Intern</h5>
-                        <h6>TAIT Towers - Touring Department</h6>
-                        <h6>June 2018 - August 2018</h6>
-                        <h6>Lititz, PA</h6>
+
+                <!--Mech Engineer @ Disney-->
+                <div class="row padding">
+                    <div class="text-center col-sm-4 padding">
+                        <div class="text-center text-sm-left sticky">
+                            <div class="exp-essential">
+                                <h5>Mechanical Engineering Professional Intern</h5>
+                                <h6>The Walt Disney Company - Modeling, Simulation and Training Tools</h6>
+                                <h6>June 2019 - January 2020</h6>
+                                <h6>Glendale, CA</h6>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-8 padding">
-
-                <div class="job-summary">
-                    <div class="text-justify">
-                        <p>During my three months at TAIT Towers,
-                            I dove into the fast-paced world of rock n' roll!
-                            I worked on Paul McCartney's Fresh Up Tour
-                            and Elton John's Farewell Yellow Brick Road Tour,
-                            and had the opportunity to help with a load-in for Radiohead.
-                            I gained hands-on experience drafting in AutoCAD
-                            and delivering drawing packages of
-                            large-scale assemblies and small-scale parts.
-                            I then oversaw the manufacturing and assembly of
-                            those packages and worked with the fabrication team to
-                            resolve any issues in production, from ordering hardware to
-                            identifying areas of mechanical failure.
-
-                        </p>
-                    </div>
-                    <p>
-
-                        <a class="more-info" data-toggle="collapse" data-target="#TAIT-summary">
-                            <u>Click here to see a list of my day-to-day responsibilities</u>
-                        </a>
-                    </p>
-                </div>
-                <div id="TAIT-summary" class="collapse">
-                    <div class="text-left">
-                        <ul class="experience-responsibilities">
-                            <li>Designed and drafted mechanical components for 2 large-scale live events in AutoCAD</li>
-                            <li>Assessed parts' designs for manufacturability and produced complete and executable
-                                drawings for parts</li>
-                            <li>Interfaced with design engineers and manufacturing team to resolve production and
-                                assembly issues
-                            </li>
-                            <li>Modeled stage scenery assembly to ensure electromechanical design feasibility</li>
-                            <li>Studied worst-case system loading to ensure safety and inform actuator selection</li>
-                            <li>Completed multiple concurrent projects, with highly urgent deadlines in accordance with
-                                client expectations</li>
-                        </ul>
+                    <div class="col-sm-8 padding">
+                        <div class="job-summary">
+                            <div class="text-justify">
+                                <p>Right out of college, I moved from PA to CA to join the MS&TT team.
+                                    I spent most of my days working in SolidWorks, MATLAB, and Simscape
+                                    developing and analyzing kinematics models of animatronic figures.
+                                    While supporting figures through the analysis pipeline,
+                                    I worked with talented engineers across Disney, presented my findings at design
+                                    reviews,
+                                    and improved the pipeline by authoring programs to streamline the
+                                    kinematic analysis process.
+                                </p>
+                            </div>
+                            <p>
+                                <a class="more-info" data-toggle="collapse" data-target="#DIS-mech-resp">
+                                    <u>Click here to see a list of my day-to-day responsibilities</u>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="DIS-mech-resp" class="collapse">
+                            <div class="text-left">
+                                <ul class="experience-responsibilities">
+                                    <li>Improved rigid body dynamics analysis pipeline by authoring scripts and
+                                        functions
+                                        for
+                                        MATLAB and Simscape to increase efficiency and enhance the user experience</li>
+                                    <li>Interfaced with product users and developers to investigate root cause of
+                                        user-identified problems in an in-house process and product suite that
+                                        facilitate
+                                        the
+                                        creation and sharing of an
+                                        animatronic’s kinematic definition across multiple disciplines and software
+                                        programs
+                                    </li>
+                                    <li>Coordinated with 3 external vendors and in-house animators, mechanical
+                                        designers,
+                                        and
+                                        controls
+                                        programmers to support production of show figures</li>
+                                    <li>Developed kinematics models from SolidWorks files to simulate and analyze rigid
+                                        body
+                                        dynamics
+                                        and
+                                        inform mechanical design of over 12 animatronic figures</li>
+                                    <li>Completed code generation of dynamic-link libraries and TwinCAT Component Object
+                                        Models
+                                        from the
+                                        animatronic kinematics models using Simulink</li>
+                                    <li>Co-authored best practices and guidelines for technical communications and
+                                        deliverables
+                                    </li>
+                                    <li>Authored and maintained detailed documentation for assumptions, model
+                                        initialization
+                                        parameters,
+                                        and
+                                        processes for the project</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>
-    </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="container-fluid padding">
-        <h2 class="text-center"> Education</h2>
-
-        <!-- COLLEGIATE -->
-        <div class="row padding">
-            <div class="col-sm-4">
-                <div class="text-left sticky">
-                    <h5>B.S.E in Mechanical Engineering and Applied Mechanics</h5>
-                    <h6>University of Pennsylvania</h6>
-                    <h6>August 2015 - May 2019</h6>
-                </div>
-            </div>
-            <div class="col-sm-8">
-                <div class="text-left">
-                    <div class="edu-summary">
-                        <p> I graduated Cum Laude from the School of Engineering and Applied Science
-                            with a GPA of 3.47. While at UPenn, I also earned a minor in Cinema and New Media Studies
-                            and a certificate in Mandarin Chinese.</p>
-                        <p>In my spare time, I participated in the theatre arts community,
-                            serving as Technical Director, Master Carpenter, and Board Member
-                            for the Pennsylvania Players theatre company. </p>
-                        </p>
+                <!-- Mech Design Engineer @ TAIT -->
+                <div class="row padding">
+                    <div class="text-center col-sm-4 padding">
+                        <div class="text-center text-sm-left sticky">
+                            <div class="exp-essential">
+                                <h5>Mechanical Design Intern</h5>
+                                <h6>TAIT Towers - Touring Department</h6>
+                                <h6>June 2018 - August 2018</h6>
+                                <h6>Lititz, PA</h6>
+                            </div>
+                        </div>
                     </div>
-                    <a class="edu-more-info" data-toggle="collapse" data-target="#penn-summary">
-                        <u>Click here for more information</u>
-                    </a>
-                    <div id="penn-summary" class="collapse">
-                        <p> I graduated Cum Laude from the School of Engineering and Applied Science
-                            with a GPA of 3.47. While at UPenn, I also earned a minor in Cinema and New Media
-                            Studies
-                            and a certificate in Mandarin Chinese.</p>
-                        <p>In my spare time, I participated in the theatre arts community,
-                            serving as Technical Director, Master Carpenter, and Board Member
-                            for the Pennsylvania Players theatre company. </p>
-                        </p>
+                    <div class="col-sm-8 padding">
+
+                        <div class="job-summary">
+                            <div class="text-justify">
+                                <p>During my three months at TAIT Towers,
+                                    I dove into the fast-paced world of rock n' roll!
+                                    I worked on Paul McCartney's Fresh Up Tour
+                                    and Elton John's Farewell Yellow Brick Road Tour,
+                                    and had the opportunity to help with a load-in for Radiohead.
+                                    I gained hands-on experience drafting in AutoCAD
+                                    and delivering drawing packages of
+                                    large-scale assemblies and small-scale parts.
+                                    I then oversaw the manufacturing and assembly of
+                                    those packages and worked with the fabrication team to
+                                    resolve any issues in production, from ordering hardware to
+                                    identifying areas of mechanical failure.
+
+                                </p>
+                            </div>
+                            <p>
+
+                                <a class="more-info" data-toggle="collapse" data-target="#TAIT-summary">
+                                    <u>Click here to see a list of my day-to-day responsibilities</u>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="TAIT-summary" class="collapse">
+                            <div class="text-left">
+                                <ul class="experience-responsibilities">
+                                    <li>Designed and drafted mechanical components for 2 large-scale live events in
+                                        AutoCAD
+                                    </li>
+                                    <li>Assessed parts' designs for manufacturability and produced complete and
+                                        executable
+                                        drawings for parts</li>
+                                    <li>Interfaced with design engineers and manufacturing team to resolve production
+                                        and
+                                        assembly issues
+                                    </li>
+                                    <li>Modeled stage scenery assembly to ensure electromechanical design feasibility
+                                    </li>
+                                    <li>Studied worst-case system loading to ensure safety and inform actuator selection
+                                    </li>
+                                    <li>Completed multiple concurrent projects, with highly urgent deadlines in
+                                        accordance
+                                        with
+                                        client expectations</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!-- Programs and CERTS -->
-        <div class="row ">
-            <div class="col-xs-12 col-sm-6 padding">
-                <h5>Mandaring Chinese Language Immersion Program</h5>
-                <h6>Beijing University x Notre Dame University</h6>
-            </div>
+            <!-- EDUCATION -->
+            <section id="education" class="container-fluid padding">
+                <h2 class="text-center"> Education</h2>
 
-            <div class="col-xs-12 col-sm-6 padding">
-                <h5>Certificate in Introduction to C++</h5>
-                <h6> <a href="https://courses.edx.org/certificates/edf000a1ac604e28a866f71038c4dab1">
-                        by Microsoft - DEV210x via edX</a></h6>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ABILITIES -->
-    <section id="abilities" class="container-fluid padding">
-        <h2 class="text-center">Abilities</h2>
-        <br>
-        <h5 class="text-center">Data Analysis</h5>
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <span class="ability-name">MATLAB</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"> </span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Simulink/Simscape</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"> </span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Microsoft Excel</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"> </span>
-                    </span>
-                </div>
-            </div>
-
-        </div>
-        <br>
-        <h5 class="text-center">3D Modeling</h5>
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <span class="ability-name">SolidWorks</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"> &#9679;</span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">AutoCAD</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos"> &#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg">&#9679; &#9679;</span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Ansys (FEA)</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; </span>
-                        <span class="ability-neg"> &#9679; &#9679; &#9679; &#9679;</span>
-                    </span>
+                <!-- COLLEGIATE -->
+                <div class="row padding">
+                    <div class="col-sm-4">
+                        <div class="text-left sticky">
+                            <h5>B.S.E in Mechanical Engineering and Applied Mechanics</h5>
+                            <h6>University of Pennsylvania</h6>
+                            <h6>August 2015 - May 2019</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="text-left">
+                            <div class="edu-summary">
+                                <p> I graduated Cum Laude from the School of Engineering and Applied Science
+                                    with a GPA of 3.47. While at UPenn, I also earned a minor in Cinema and New Media
+                                    Studies
+                                    and a certificate in Mandarin Chinese.</p>
+                                <p>In my spare time, I participated in the theatre arts community,
+                                    serving as Technical Director, Master Carpenter, and Board Member
+                                    for the Pennsylvania Players theatre company. </p>
+                                </p>
+                            </div>
+                            <a class="edu-more-info" data-toggle="collapse" data-target="#penn-summary">
+                                <u>Click here for more information</u>
+                            </a>
+                            <div id="penn-summary" class="collapse">
+                                <p> I graduated Cum Laude from the School of Engineering and Applied Science
+                                    with a GPA of 3.47. While at UPenn, I also earned a minor in Cinema and New Media
+                                    Studies
+                                    and a certificate in Mandarin Chinese.</p>
+                                <p>In my spare time, I participated in the theatre arts community,
+                                    serving as Technical Director, Master Carpenter, and Board Member
+                                    for the Pennsylvania Players theatre company. </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-6">
-                    <span class="ability-name">COMSOL (CFD)</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; </span>
-                        <span class="ability-neg"> &#9679; &#9679; &#9679; &#9679;</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <br>
+                <!-- Programs and CERTS -->
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-6 padding">
+                        <h5>Mandaring Chinese Language Immersion Program</h5>
+                        <h6>Beijing University x Notre Dame University</h6>
+                    </div>
 
-        <h5 class="text-center">Software</h5>
-        <div class="container-fluid ">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <span class="ability-name">Visual Studio</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"> &#9679;</span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">GitHub</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"> &#9679; </span>
-                    </span>
-                </div>
+                    <div class="col-xs-12 col-sm-6 padding">
+                        <h5>Certificate in Introduction to C++</h5>
+                        <h6> <a href="https://courses.edx.org/certificates/edf000a1ac604e28a866f71038c4dab1">
+                                by Microsoft - DEV210x via edX</a></h6>
+                    </div>
 
-                <div class="col-md-6">
-                    <span class="ability-name">C#</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"> &#9679; &#9679;</span>
-                    </span>
                 </div>
-                <div class="col-md-6">
-                    <span class="ability-name">GitLab</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg">&#9679; &#9679; </span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">SourceTree</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg">&#9679; &#9679; </span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Visual Studio Code</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"> &#9679; &#9679;</span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">HTML5</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679;</span>
-                        <span class="ability-neg"> &#9679; &#9679; &#9679;</span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">CSS</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679;</span>
-                        <span class="ability-neg"> &#9679; &#9679; &#9679;</span>
-                    </span>
-                </div>
+            </section>
 
-                <div class="col-md-6">
-                    <span class="ability-name">C++</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; </span>
-                        <span class="ability-neg"> &#9679; &#9679; &#9679; &#9679; </span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <br>
+            <!-- ABILITIES -->
+            <section id="abilities" class="container-fluid padding">
+                <h2 class="text-center">Abilities</h2>
+                <br>
+                <h5 class="text-center">Data Analysis</h5>
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <span class="ability-name">MATLAB</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"> </span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Simulink/Simscape</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"> </span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Microsoft Excel</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"> </span>
+                            </span>
+                        </div>
+                    </div>
 
-        <h5 class="text-center">Project Management</h5>
-        <div class="container-fluid">
-            <div class="row text-center">
+                </div>
+                <br>
+                <h5 class="text-center">3D Modeling</h5>
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <span class="ability-name">SolidWorks</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"> &#9679;</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">AutoCAD</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos"> &#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg">&#9679; &#9679;</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Ansys (FEA)</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; </span>
+                                <span class="ability-neg"> &#9679; &#9679; &#9679; &#9679;</span>
+                            </span>
+                        </div>
 
-                <div class="col-md-6">
-                    <span class="ability-name">Microsoft Word</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"></span>
-                    </span>
+                        <div class="col-md-6">
+                            <span class="ability-name">COMSOL (CFD)</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; </span>
+                                <span class="ability-neg"> &#9679; &#9679; &#9679; &#9679;</span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Microsoft Powerpoint</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"> </span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">BlueJeans</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos"> &#9679; &#9679; &#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"></span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Slack</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"></span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Confluence</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"> &#9679; </span>
-                    </span>
-                </div>
+                <br>
 
-                <div class="col-md-6">
-                    <span class="ability-name">Sprint Planning</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"> &#9679; </span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Jira Software</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"> &#9679; &#9679;</span>
-                    </span>
-                </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Tortoise SVN</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679;</span>
-                        <span class="ability-neg"> &#9679; &#9679; </span>
-                    </span>
-                </div>
+                <h5 class="text-center">Software</h5>
+                <div class="container-fluid ">
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <span class="ability-name">Visual Studio</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"> &#9679;</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">GitHub</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"> &#9679; </span>
+                            </span>
+                        </div>
 
-                <div class="col-md-6">
-                    <span class="ability-name">Agile Process</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"> &#9679; &#9679;</span>
-                    </span>
+                        <div class="col-md-6">
+                            <span class="ability-name">C#</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"> &#9679; &#9679;</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">GitLab</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg">&#9679; &#9679; </span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">SourceTree</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg">&#9679; &#9679; </span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Visual Studio Code</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"> &#9679; &#9679;</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">HTML5</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679;</span>
+                                <span class="ability-neg"> &#9679; &#9679; &#9679;</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">CSS</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679;</span>
+                                <span class="ability-neg"> &#9679; &#9679; &#9679;</span>
+                            </span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <span class="ability-name">C++</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; </span>
+                                <span class="ability-neg"> &#9679; &#9679; &#9679; &#9679; </span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <span class="ability-name">Technical Writing</span>
-                    <span class="ability-rank">
-                        <span class="ability-pos">&#9679; &#9679; &#9679; </span>
-                        <span class="ability-neg"> &#9679; &#9679;</span>
-                    </span>
+                <br>
+
+                <h5 class="text-center">Project Management</h5>
+                <div class="container-fluid">
+                    <div class="row text-center">
+
+                        <div class="col-md-6">
+                            <span class="ability-name">Microsoft Word</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"></span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Microsoft Powerpoint</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"> </span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">BlueJeans</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos"> &#9679; &#9679; &#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"></span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Slack</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"></span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Confluence</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"> &#9679; </span>
+                            </span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <span class="ability-name">Sprint Planning</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"> &#9679; </span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Jira Software</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"> &#9679; &#9679;</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Tortoise SVN</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679;</span>
+                                <span class="ability-neg"> &#9679; &#9679; </span>
+                            </span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <span class="ability-name">Agile Process</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"> &#9679; &#9679;</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="ability-name">Technical Writing</span>
+                            <span class="ability-rank">
+                                <span class="ability-pos">&#9679; &#9679; &#9679; </span>
+                                <span class="ability-neg"> &#9679; &#9679;</span>
+                            </span>
+                        </div>
+
+
+                    </div>
                 </div>
+                <br>
+            </section>
 
-
-            </div>
-        </div>
-        <br>
-    </section>
-
-    <!-- PROJECT WORK 
+            <!-- PROJECT WORK 
     <section id="abilities" class="container-fluid padding">
         <h2 class="text-center">Project Work</h2>
         <p>Coming soon!</p>
     </section>
 -->
 
-    <section id="connect" class="container-fluid padding">
-        <a href="mailto: lee.emmakatherine@gmail.com">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <span> lee.emmakatherine@gmail.com</span>
-        </a>
-        <br>
-        <a href="https://www.linkedin.com/in/emma-k-lee">
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
-            <span>LinkedIn Profile</span>
-        </a>
-        <br>
-        <a href="https://github.com/emmakatherinelee">
-            <i class="fab fa-github" aria-hidden="true"></i>
-            <span> GitHub Profile</span>
-        </a>
-    </section>
+            <section id="connect" class="container-fluid padding">
+                <a href="mailto: lee.emmakatherine@gmail.com">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span> lee.emmakatherine@gmail.com</span>
+                </a>
+                <br>
+                <a href="https://www.linkedin.com/in/emma-k-lee">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <br>
+                <a href="https://github.com/emmakatherinelee">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span> GitHub Profile</span>
+                </a>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
