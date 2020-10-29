@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+
+  /* Cyberpunk Colors
+     https://coolors.co/gradient-maker/070213-161875-07a8a9-30c08b-fff9fd-d50196-000000-46137e?position=0,14.285714285714286,28.571428571428573,42.85714285714286,57.142857142857146,71.42857142857143,85.71428571428572,100&opacity=100,100,100,100,100,100,100,100&type=radial&rotation=90
+     https://medium.com/@gokulmohanty/do-we-exist-inside-of-a-computer-simulation-67299e535c6d
+     https://i.pinimg.com/originals/75/a7/b4/75a7b43b6728b39c3f9948870c7773c9.jpg
+  */
+
   --color-tokyonight-h: 210;
   --color-tokyonight-s: 30%;
 
@@ -18,36 +25,66 @@
 
   --color-thematrix-h: 122;
   --color-thematrix-s: 77%;
-  ;
-  
-/*https://coolors.co/gradient-maker/070213-161875-07a8a9-30c08b-fff9fd-d50196-000000-46137e?position=0,14.285714285714286,28.571428571428573,42.85714285714286,57.142857142857146,71.42857142857143,85.71428571428572,100&opacity=100,100,100,100,100,100,100,100&type=radial&rotation=90*/
-/*https://medium.com/@gokulmohanty/do-we-exist-inside-of-a-computer-simulation-67299e535c6d*/
-/*https://i.pinimg.com/originals/75/a7/b4/75a7b43b6728b39c3f9948870c7773c9.jpg*/
 
+
+
+  /* ANTIQUE TONES
+     https://coolors.co/002642-841826-e08e00-034524-e1e4e3-d4d9d8-333433-191a18 
+  */
+  --antiqueRuby-h: 352.22;
+  --antiqueRuby-s: 69%;
+  --antiqueRuby-l: 30.59%;
+
+  --harvestGold-h: 38.04;
+  --harvestGold-s: 100%;
+  --harvestGold-l: 43.92%;
+  
+  --forestGreen-h: 150;
+  --forestGreen-s: 92%;
+  --forestGreen-l: 14%;
+
+  --prussianBlue-h: 205;
+  --prussianBlue-s: 100%;
+  --prussianBlue-l: 13%;
+  
+  --platinum-h: 160;
+  --platinum-s: 5%;
+  --platinum-l: 89%;
+
+  --lightGray-h: 168;
+  --lightGray-s: 6%;
+  --lightGray-l: 84%;
+
+  --onyx-h: 120;
+  --onyx-s: 1%;
+  --onyx-l: 20%;
+
+  --eerieBlack-h: 90;
+  --eerieBlack-s: 4%;
+  --eerieBlack-l: 10%;
 }
 
 html, body {
     width: 100%;
     font-family: 'Raleway', sans-serif !important;
     font-size: 18px;
-    color: hsla(var(--color-notwhite-h), var(--color-notwhite-s), 85%, 1);
+    color: hsla(var(--color-notwhite-h), var(--color-notwhite-s), 80%, 1);
     line-height: 1.75;
+    word-spacing: .2rem;
     
 }
 
 body{
   background: white;
 
-background: -moz-linear-gradient(0deg, hsla(158, 60%, 98%, 1) 42.85714285714286%, hsla(320, 100%, 99%, 1) 57.142857142857146%, hsla(318, 99%, 99.5%, 1) 71.42857142857143%) ;
+background: -moz-linear-gradient(180deg, hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),10%, 1) 0%, hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),7%, 1) 100%) ;
 
-background: -webkit-linear-gradient(0deg, hsla(158, 60%, 98%, 1) 42.85714285714286%, hsla(320, 100%, 99%, 1) 57.142857142857146%, hsla(318, 99%, 99.5%, 1) 71.42857142857143%) ;
+background: -webkit-linear-gradient(180deg, hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),10%, 1) 0%, hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),7%, 1) 100%) ;
 
 background: linear-gradient(180deg, hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),10%, 1) 0%, hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),7%, 1) 100%) ;
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#070213", endColorstr="#161875", GradientType=1 );
 }
 
-a {
+a, a:hover {
   color: hsla(var(--color-notwhite-h), var(--color-notwhite-s), 85%, 1);
 }
 
@@ -79,7 +116,7 @@ a {
 }
 
 nav a, .navbar-toggler {
-  color: var(--color5);
+  color: hsla(var(--color-notwhite-h), var(--color-notwhite-s), 85%, 1);
 }
 
 .navbar-nav li {
@@ -89,49 +126,13 @@ nav a, .navbar-toggler {
 }
 
 .navbar-nav li:hover {
-
+  color: hsla(var(--color-notwhite-h), var(--color-notwhite-s), 95%, 1);
+  text-shadow: 0px 0px 6px hsla(var(--color-notwhite-h), var(--color-notwhite-s), 95%, 1);
 }
 
 .nav-link {
   font-size: 1.1em !important;
 }
-
-.carousel-inner {
-  max-height: 500px;
-  min-height: auto;
-}
-.carousel-inner img {
-  object-fit: cover;
-  width: 100%;
-  object-position: 0 50%;
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 10px black;
-}
-
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 500%;
-  text-shadow: 1px 1px 10px black;
-  padding-bottom: 1rem;
-}
-
-.main-text {
-  position: absolute;
-  top: 33%;
-  width: 96.66666666666666%;
-  text-shadow: 0px 0px 2px hsla(0, 0%, 60%, 1);
-}
-
 
 .padding {
   padding-top: 1rem;
@@ -148,10 +149,10 @@ section {
   padding: 20px;
 }
 
-#about, #experience, #education, #abilities, #connect {
+#about, #projects, #experience, #education, #abilities, #connect {
   align-items: center;
   justify-content: center;
-  padding-left: 10%;
+  padding-left: 16.5%;
   padding-right: 10%;
 }
 
@@ -159,6 +160,18 @@ section {
 background-color: hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),5%, 1);
 }
 /*ABOUT*/
+
+#about {
+  align-items: center;
+  justify-content: center;
+  padding-top: 14%;
+}
+
+#about > div span {
+line-height: 1;
+margin: 0;
+}
+
 
 .headshot-container{
   position: relative;
@@ -176,6 +189,61 @@ background-color: hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),5%, 1
   padding: 8%;
 }
 
+
+.quote-wrapper {
+  width: 516px;
+  height: 443px;
+  position: relative;
+  margin: 0 auto 0; /*OPTIONAL MARGIN*/
+  word-wrap: break-word;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.text p {
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  word-wrap: break-word;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(
+    0% 5%,
+    95% 100%,
+    0 100%
+  );
+  shape-margin: 0%;
+}
+
+.text p::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: right;
+  shape-outside: polygon(
+    
+    100% 5%,
+    100% 100%,
+    5% 100%
+  );
+  shape-margin: 0%;
+}
+
+/* PROJECTS */
+
+
+
 /*EXPERIENCE*/
 
 .sticky {
@@ -189,7 +257,13 @@ background-color: hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),5%, 1
 
 
 /*ABILITIES*/
-
+ 
+.col-md-6.ability {
+  padding: 0rem;
+}
+.ability:hover {
+  text-shadow: 0px 0px 6px hsla(var(--color-notwhite-h), var(--color-notwhite-s), 95%, 1);
+}
 
 .ability-name {
   float: left;
@@ -205,6 +279,7 @@ background-color: hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),5%, 1
 
 .ability-neg {
     color:hsla(var(--color-lightblue-h), calc(var(--color-lightblue-s)/3), 30%, 1);
+    text-shadow: none !important;
 }
 
 /*FOOTER*/
@@ -469,24 +544,6 @@ background-color: hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),5%, 1
   
   
   @media (max-width: 768px) {
-      .carousel-caption {
-          top: 45%;
-      }
-      
-      .carousel-caption h1 {
-          font-size: 350%;
-      }
-      
-      .carousel-caption h3 {
-          font-size: 140%;
-          font-weight: 400%;
-          padding-bottom: .2rem;
-      }
-  
-      .carousel-caption .btn {
-          font-size: 95%;
-          padding: 8px 14px;
-      }
 
       .disp-4 {
           font-size: 200%;
@@ -527,27 +584,6 @@ background-color: hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),5%, 1
     .background-content {
       display: none;
     }
-      .carousel-caption {
-          top: 40%;
-      }
-      
-      .carousel-caption h1 {
-          font-size: 250%;
-      }
-      
-      .carousel-caption h3 {
-          font-size: 110%;
-      }
-  
-      .carousel-caption .btn {
-          font-size: 90%;
-          padding: 4px 8px;
-      }
-  
-      .carousel-indicators {
-          display: none;
-      }
-
       .disp-4 {
           font-size: 160%;
       }
@@ -564,15 +600,26 @@ background-color: hsla(var(--color-tokyonight-h),var(--color-tokyonight-s),5%, 1
         position: relative;
       }
 
+      .quote-wrapper {
+        width: auto;
+        height: auto;
+      }
+      
+      .text::before {
+        width: 0;
+        height: auto;
+        shape-outside: none;
+      }
+
+      .text p::before {
+        width: 0;
+        height: auto;
+        shape-outside: none;
+      }
 
   }
-  
-  
-  /* FIREFOX BUG FIX */
-  .carousel-item {
-      transition: -webkit-transform 0.5s ease;
-      transition: transform 0.5s ease;
-      transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-      -webkit-backface-visibility: visible;
-      backface-visibility: visible;
+
+  [class*="col-"] {
+    padding: 1rem;
   }
+  
