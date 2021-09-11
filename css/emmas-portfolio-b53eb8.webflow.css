@@ -1231,21 +1231,38 @@ figcaption {
 
 .modal-window.capsen-details {
   display: none;
-  height: 542px;
+  overflow: scroll;
+  height: auto;
+  max-height: 78%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .modal-window.disney-systems-details {
   display: none;
+  overflow: scroll;
+  height: auto;
+  max-height: 66%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .modal-window.disney-mechanical-details {
   display: none;
-  height: 489px;
+  overflow: scroll;
+  height: auto;
+  max-height: 73%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .modal-window.tait-details {
   display: none;
-  height: 434px;
+  overflow: scroll;
+  height: 108vh;
+  max-height: 64%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .modal-window.cert-c {
@@ -1283,7 +1300,7 @@ figcaption {
 }
 
 .image-6 {
-  position: static;
+  position: relative;
   left: 0%;
   top: 0%;
   right: 0%;
@@ -1295,14 +1312,14 @@ figcaption {
 
 .div-block-2 {
   position: absolute;
-  left: auto;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
+  top: 0px;
+  right: 0px;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 0px;
   cursor: auto;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .capsen-details {
@@ -1621,8 +1638,49 @@ figcaption {
     grid-template-rows: auto auto;
   }
 
+  .modal-background {
+    display: none;
+  }
+
+  .modal-window.capsen-details {
+    display: none;
+    overflow: scroll;
+    height: auto;
+    max-height: 78%;
+  }
+
+  .modal-window.disney-systems-details {
+    display: none;
+    overflow: scroll;
+    height: auto;
+    max-height: 78%;
+    min-height: 0px;
+  }
+
   .modal-window.disney-mechanical-details {
-    height: 621px;
+    display: none;
+    overflow: scroll;
+    height: auto;
+    max-height: 78%;
+  }
+
+  .modal-window.tait-details {
+    display: none;
+    overflow: scroll;
+    height: auto;
+    max-height: 78%;
+  }
+
+  .modal-window.cert-c {
+    display: none;
+  }
+
+  .modal-window.cert-sd1 {
+    display: none;
+  }
+
+  .modal-window.cert-sd2 {
+    display: none;
   }
 }
 
@@ -1639,6 +1697,7 @@ figcaption {
   }
 
   .container {
+    width: 100%;
     text-align: center;
   }
 
@@ -1768,6 +1827,12 @@ figcaption {
   .about-head-text-wrap {
     width: 70%;
     max-width: 470px;
+  }
+
+  .skillset-wrap {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
   }
 
   .skills-grid {
@@ -1999,14 +2064,14 @@ figcaption {
 }
 
 #w-node-dac044b7-be90-60f3-414d-4224828ffd8f-565fff42 {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
   -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
   -ms-grid-row-span: 1;
-  grid-row-end: 2;
+  grid-row-end: span 1;
 }
 
 #w-node-dac044b7-be90-60f3-414d-4224828ffd90-565fff42 {
