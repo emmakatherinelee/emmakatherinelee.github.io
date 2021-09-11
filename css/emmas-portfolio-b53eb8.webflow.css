@@ -452,7 +452,7 @@ figcaption {
 
 .intro-wrap {
   margin-top: 40px;
-  margin-bottom: 140px;
+  margin-bottom: 60px;
 }
 
 .name-text {
@@ -502,8 +502,8 @@ figcaption {
   grid-column-gap: 11px;
   grid-row-gap: 6px;
   grid-template-areas: ".";
-  -ms-grid-columns: 1fr 11px 1fr 11px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 11px 1fr;
+  grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 250px 6px minmax(250px, 1fr);
   grid-template-rows: 250px minmax(250px, 1fr);
   -o-object-fit: contain;
@@ -1115,6 +1115,8 @@ figcaption {
 }
 
 .project {
+  display: none;
+  overflow: visible;
   margin-right: 30px;
   margin-bottom: 40px;
   margin-left: 30px;
@@ -1162,6 +1164,10 @@ figcaption {
 .div-block {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.div-block.certificates {
+  padding-top: 0px;
 }
 
 .image-5 {
@@ -1349,6 +1355,10 @@ figcaption {
   padding: 20px;
   -o-object-fit: fill;
   object-fit: fill;
+}
+
+.container-3 {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -1598,6 +1608,11 @@ figcaption {
     text-align: center;
   }
 
+  .div-block.certificates {
+    padding-top: 0px;
+    padding-bottom: 15px;
+  }
+
   .certificates-grid {
     grid-row-gap: 40px;
     -ms-grid-columns: 1fr;
@@ -1833,7 +1848,7 @@ figcaption {
   }
 
   .heading-jumbo {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 48px;
   }
 
