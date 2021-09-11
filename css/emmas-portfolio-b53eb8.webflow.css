@@ -1625,6 +1625,11 @@ figcaption {
     text-align: center;
   }
 
+  .education-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .div-block.certificates {
     padding-top: 0px;
     padding-bottom: 15px;
@@ -1632,8 +1637,8 @@ figcaption {
 
   .certificates-grid {
     grid-row-gap: 40px;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
   }
@@ -1899,6 +1904,11 @@ figcaption {
     margin-bottom: 85px;
   }
 
+  .education-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .modal-window.disney-mechanical-details {
     overflow: scroll;
     width: 80%;
@@ -2033,6 +2043,10 @@ figcaption {
   .project-description-grid-left {
     width: 100%;
     max-width: none;
+  }
+
+  .certificates-grid {
+    display: none;
   }
 
   .modal-window.disney-mechanical-details {
