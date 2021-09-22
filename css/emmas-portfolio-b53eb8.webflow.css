@@ -191,8 +191,10 @@ figcaption {
 }
 
 .paragraph-small {
+  opacity: 0.6;
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
 }
 
 .styleguide-header-wrap {
@@ -273,8 +275,9 @@ figcaption {
 }
 
 .paragraph-light {
-  margin-bottom: 22px;
+  margin-bottom: 0px;
   opacity: 0.6;
+  text-align: center;
 }
 
 .paragraph-light.cc-position-name {
@@ -579,8 +582,10 @@ figcaption {
   margin-bottom: 0px;
   background-image: url('../images/B1---MEAM-Design-Day---TrailBlazer-3.jpg');
   background-position: 50% 55%;
-  background-size: 90%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
   -o-object-fit: fill;
   object-fit: fill;
 }
@@ -589,7 +594,7 @@ figcaption {
   margin-bottom: 0px;
   background-image: url('../images/keeb_nocap_top.jpeg');
   background-position: 50% 40%;
-  background-size: 90%;
+  background-size: cover;
 }
 
 .work-image.cc-work-4 {
@@ -612,9 +617,14 @@ figcaption {
 
 .work-image.cc-work-3 {
   margin-bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.41);
+  background-size: cover;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
 }
 
 .project-name-link {
+  display: none;
   margin-bottom: 5px;
   font-size: 20px;
   line-height: 34px;
@@ -1115,11 +1125,15 @@ figcaption {
 }
 
 .project {
-  display: none;
+  display: block;
   overflow: visible;
   margin-right: 30px;
   margin-bottom: 40px;
   margin-left: 30px;
+}
+
+.project.not-ready {
+  display: none;
 }
 
 .columns {
@@ -1382,6 +1396,7 @@ figcaption {
 .heading-3 {
   width: auto;
   margin-right: 0px;
+  margin-bottom: 66px;
   margin-left: 70px;
   text-align: left;
   -o-object-fit: contain;
@@ -1426,11 +1441,84 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   margin-right: auto;
+  margin-bottom: 100px;
   margin-left: 70px;
   padding-left: 0px;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+}
+
+.text-block {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0%, 0px);
+  -ms-transform: translate(0%, 0px);
+  transform: translate(0%, 0px);
+  color: #fff;
+  font-size: 36px;
+}
+
+.div-block-6 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  margin-left: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.text-block-2 {
+  position: static;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.div-block-7 {
+  position: relative;
+  background-color: transparent;
+}
+
+.heading-5 {
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {
