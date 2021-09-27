@@ -1202,7 +1202,7 @@ figcaption {
   display: flex;
   margin-right: auto;
   margin-bottom: 100px;
-  margin-left: 70px;
+  margin-left: 10%;
   padding-left: 0px;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
