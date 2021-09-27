@@ -1420,7 +1420,7 @@ figcaption {
   }
 
   .position-name-text {
-    text-align: left;
+    text-align: center;
   }
 
   .work-experience-grid {
@@ -1860,7 +1860,7 @@ figcaption {
   }
 
   .div-block-6 {
-    display: none;
+    display: block;
   }
 
   .paragraph {
@@ -1919,6 +1919,10 @@ figcaption {
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+  }
+
+  .position-name-text {
+    text-align: center;
   }
 
   .contact {
