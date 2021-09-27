@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Sep 22 2021 20:24:36 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Sep 27 2021 05:15:05 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6101fee35defaaa20b5fff43" data-wf-site="6101fee25defaa16f45fff3a">
 <head>
   <meta charset="utf-8">
@@ -31,7 +31,7 @@
   <link href="../images/webclip.png" rel="apple-touch-icon">
 </head>
 <body data-w-id="5c6e6f46bf98b20756f621c7">
-  <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
+  <div data-collapse="medium" data-animation="default" data-duration="1000" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
     <div class="navigation-items">
       <a href="../index.html" class="logo-link w-nav-brand">
         <h3>EKL</h3>
@@ -39,6 +39,14 @@
       <div class="navigation-wrap">
         <nav role="navigation" class="navigation-items w-nav-menu">
           <a href="../about.html" class="navigation-item w-nav-link">About</a>
+          <div data-hover="true" data-delay="0" class="dropdown navigation-item w-dropdown">
+            <div class="w-dropdown-toggle">
+              <div>Major Things</div>
+            </div>
+            <nav class="dropdown-list-2 w-dropdown-list">
+              <a href="../work/project-1.html" aria-current="page" class="navigation-item w-nav-link w--current">TrailBlazer</a>
+            </nav>
+          </div>
         </nav>
         <div class="menu-button w-nav-button"><img src="../images/menu-icon_1menu-icon.png" width="22" alt="" class="menu-icon"></div>
       </div>
@@ -46,48 +54,33 @@
   </div>
   <div class="section">
     <div class="container">
-      <div class="w-layout-grid project-overview-grid">
-        <div id="w-node-_0befc76b-828c-2822-f9fa-f2c6de040bbf-0b5fff43">
-          <h1 class="heading-jumbo">TrailBlazer</h1>
-          <div class="paragraph-light">Electromechanical Design</div>
+      <div>
+        <h1 class="heading-jumbo">TrailBlazer</h1>
+        <div class="div-block-10">
+          <h5 class="heading-7">Electromechanical Design</h5>
+          <h5 class="heading-7 heading-8 heading-9">|</h5>
+          <h5 class="heading-7">September 2018 - April 2019</h5>
         </div>
-        <div id="w-node-_0befc76b-828c-2822-f9fa-f2c6de040bc4-0b5fff43">
-          <div class="position-name-text">Project Overview</div>
-          <div class="paragraph-light cc-position-name">For my senior design project, a team of my peers and I completed TrailBlazer, an electromechanical system and stationary rig designed to replicate the experience of mountain biking for the user. The final product consisted of three major subsystems--a pitch subsystem, a vibration subsystem, and a passive roll subsystem--as well as two minor subsystems--a pedal resistance system and the stationary base frame.</div>
+        <p class="paragraph">TrailBlazer is a stationary mountain bike simulator that aims to emulate the sensations of specifically downhill mountain biking, something not yet commercially available in other stationary bikes.</p>
+        <div class="spacer"></div>
+        <div class="w-row">
+          <div class="column w-col w-col-6">
+            <div class="position-name-text">Project Overview</div>
+            <div class="paragraph">For my capstone design project, a team of five of my peers and myself completed TrailBlazer, an electromechanical system and stationary rig designed to replicate the experience of mountain biking for the user. The final product consisted of three major subsystems--a pitch subsystem, a vibration subsystem, and a passive roll subsystem--as well as two minor subsystems--a pedal resistance system and the stationary base frame.<br></div>
+          </div>
+          <div class="column w-col w-col-6">
+            <div class="position-name-text">Contributions</div>
+            <div class="paragraph">For this project, I was responsible for the system controls and electronics, stakeholder research, and safety standards and best practices. I additionally contributed to data processing and analysis. In particular, my efforts were devoted to actuating the pitch subsystem to accurately reflect the angular accelerations and jerks of a mountain bike ride, and introducing preliminary VR capabilities.</div>
+          </div>
         </div>
-        <div id="w-node-_0befc76b-828c-2822-f9fa-f2c6de040bc9-0b5fff43">
-          <div class="position-name-text">My Contributions</div>
-          <div class="paragraph-light cc-position-name">For this project, I was responsible for the system controls and electronics, stakeholder research, and safety standards and best practices. I additionally contributed to data processing and analysis. In particular, my efforts were devoted to actuating the pitch subsystem to accurately reflect the angular accelerations and jerks of a mountain bike ride, and introducing early VR capabilities.</div>
-        </div>
+        <div class="spacer"></div>
+        <div class="div-block-9">
+          <div class="position-name-text">Technical Details</div>
+          <p class="paragraph">The pitch system consists of active and passive portions, the active portion being actuated by a pneumatic cylinder and the passive portion supporting the load of the mechanism with large springs. The passive portion is the same design used to enable the passive roll system. The passive roll system allows the user to lean side to side, which is a common movement performed in downhill mountain biking for cornering. The vibration subsystem is actuated by an AC eccentric rotating mass motor. The pedal resistance subsystem provides the user with a sense of work and motion; this subsystem is comprised of a modified off-the-shelf-fluidic pedal resistance system. The base frame consists of square steel tubing and prevents the mechanism from tipping while in use.</p>
+          <p class="paragraph">For controlling the actuation and implementing the visual components, the control system architecture was selected according to what instruments and methods were compatible with the critical mechanical systems, in particular the pneumatic cylinder. After down-selection, the final design included a servo pneumatic positioning system, a linear Hall effect magnetoresistive sensor, an analog circuit with operational amplifiers, an Arduino, and a laptop. The visual components of the final design interfaced with the laptop, with a MATLAB script initiating the display of a preset video in time with the commanded pitch dataset.</p>
+        </div><img src="../images/B1---MEAM-Design-Day---TrailBlazer-3.jpg" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, 94vw" srcset="../images/B1---MEAM-Design-Day---TrailBlazer-3-p-1080.jpeg 1080w, ../images/B1---MEAM-Design-Day---TrailBlazer-3-p-1600.jpeg 1600w, ../images/B1---MEAM-Design-Day---TrailBlazer-3-p-2000.jpeg 2000w, ../images/B1---MEAM-Design-Day---TrailBlazer-3-p-2600.jpeg 2600w, ../images/B1---MEAM-Design-Day---TrailBlazer-3-p-3200.jpeg 3200w, ../images/B1---MEAM-Design-Day---TrailBlazer-3.jpg 5063w" alt="" class="detail-header-image"><img src="../images/B1---MEAM-Design-Day---TrailBlazer-7.jpg" width="920" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, 94vw" srcset="../images/B1---MEAM-Design-Day---TrailBlazer-7-p-1080.jpeg 1080w, ../images/B1---MEAM-Design-Day---TrailBlazer-7-p-1600.jpeg 1600w, ../images/B1---MEAM-Design-Day---TrailBlazer-7-p-2000.jpeg 2000w, ../images/B1---MEAM-Design-Day---TrailBlazer-7-p-2600.jpeg 2600w, ../images/B1---MEAM-Design-Day---TrailBlazer-7-p-3200.jpeg 3200w, ../images/B1---MEAM-Design-Day---TrailBlazer-7.jpg 5327w" alt="" class="detail-image"><img src="../images/B1---MEAM-Design-Day---TrailBlazer-4.jpg" width="920" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, 94vw" srcset="../images/B1---MEAM-Design-Day---TrailBlazer-4-p-1080.jpeg 1080w, ../images/B1---MEAM-Design-Day---TrailBlazer-4-p-1600.jpeg 1600w, ../images/B1---MEAM-Design-Day---TrailBlazer-4-p-2000.jpeg 2000w, ../images/B1---MEAM-Design-Day---TrailBlazer-4-p-2600.jpeg 2600w, ../images/B1---MEAM-Design-Day---TrailBlazer-4-p-3200.jpeg 3200w, ../images/B1---MEAM-Design-Day---TrailBlazer-4.jpg 5471w" alt="" class="detail-image"><img src="../images/B1---MEAM-Design-Day---TrailBlazer-1.jpg" width="920" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, 94vw" srcset="../images/B1---MEAM-Design-Day---TrailBlazer-1-p-1080.jpeg 1080w, ../images/B1---MEAM-Design-Day---TrailBlazer-1-p-1600.jpeg 1600w, ../images/B1---MEAM-Design-Day---TrailBlazer-1-p-2000.jpeg 2000w, ../images/B1---MEAM-Design-Day---TrailBlazer-1-p-2600.jpeg 2600w, ../images/B1---MEAM-Design-Day---TrailBlazer-1-p-3200.jpeg 3200w, ../images/B1---MEAM-Design-Day---TrailBlazer-1.jpg 5123w" alt="" class="detail-image">
+        <p class="caption">Team  (Left to Right): Andres Zambrano, Emma Lee, Anthony Nardone, Christopher Mok, Nicholas McKnight</p>
       </div>
-    </div>
-  </div>
-  <div class="section"><img src="../images/B1---MEAM-Design-Day---TrailBlazer-3.jpg" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 99vw" srcset="../images/B1---MEAM-Design-Day---TrailBlazer-3-p-1080.jpeg 1080w, ../images/B1---MEAM-Design-Day---TrailBlazer-3-p-1600.jpeg 1600w, ../images/B1---MEAM-Design-Day---TrailBlazer-3-p-2000.jpeg 2000w, ../images/B1---MEAM-Design-Day---TrailBlazer-3-p-2600.jpeg 2600w, ../images/B1---MEAM-Design-Day---TrailBlazer-3-p-3200.jpeg 3200w, ../images/B1---MEAM-Design-Day---TrailBlazer-3.jpg 5063w" alt="" class="detail-header-image"></div>
-  <div class="section">
-    <div class="container">
-      <div class="w-container">
-        <div class="w-layout-grid grid">
-          <div id="w-node-_08e99948-3e4a-7044-5675-ea66c7984ef9-0b5fff43" class="paragraph-light">The motivation for the creation of this device came from the rising popularity fo both virtual technologies and outdoor adventure as a form of exercise and entertainment, and after market research, the team decided to focus on the downhilll experience, as there are no products on the market that address uphill and downhill biking. </div>
-          <div id="w-node-_8a45824e-0089-9980-758c-0d6d319fde59-0b5fff43" class="paragraph-light">Although a stationary rig may never be able to truly replicate the thrill of biking outdoors, based on stakeholder research, we identified three problems with conventional mountain biking that TrailBlazer could address: fitness level and barrier to entry, time required to perform conventional mountain biking, and safety.<br><br>In addition to mitigating the safety risks associated with conventional mountain biking, I researched safety standards for a variety of exercise equipment standards set by the American Society of Testing and Materials, supplemented by documentation on virtual reality best practices by established virtual reality companies and committees.</div><img src="../images/B1---MEAM-Design-Day---TrailBlazer-7.jpg" width="920" id="w-node-ae0216f3-c4e9-11b0-43a9-81ef08b0b9c3-0b5fff43" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 94vw" srcset="../images/B1---MEAM-Design-Day---TrailBlazer-7-p-1080.jpeg 1080w, ../images/B1---MEAM-Design-Day---TrailBlazer-7-p-1600.jpeg 1600w, ../images/B1---MEAM-Design-Day---TrailBlazer-7-p-2000.jpeg 2000w, ../images/B1---MEAM-Design-Day---TrailBlazer-7-p-2600.jpeg 2600w, ../images/B1---MEAM-Design-Day---TrailBlazer-7-p-3200.jpeg 3200w, ../images/B1---MEAM-Design-Day---TrailBlazer-7.jpg 5327w" alt="" class="detail-image">
-          <div id="w-node-eb6c7e0e-49e8-abf0-7096-a5522c9dea54-0b5fff43" class="paragraph-light">For the pitch subsystem, the team selected a combination of active and passive pitching for the final design. The passive system applies restorative torque, via a set of springs at the base of the rig, to the system to provide most of the static holding torque as the rider pitches forwards and back. <br><br>The active system applies the necessary torque to accelerate the inertial load of the bike and rider, actively controlled the angular pitch of the rider, simulating changes in terrain, jumps, and landings.</div><img src="../images/Screen-Shot-2021-08-04-at-12.13.09-AM.png" loading="lazy" id="w-node-_29e49c7b-0b82-79c5-8bb1-97b10bb14fb7-0b5fff43" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 94vw" srcset="../images/Screen-Shot-2021-08-04-at-12.13.09-AM-p-500.png 500w, ../images/Screen-Shot-2021-08-04-at-12.13.09-AM-p-800.png 800w, ../images/Screen-Shot-2021-08-04-at-12.13.09-AM.png 836w" alt="" class="detail-image">
-        </div>
-      </div>
-      <div class="w-layout-grid project-description-grid-right">
-        <div id="w-node-_2c54ee1e-3341-eeaa-5fbd-5d0f6930fdd6-0b5fff43" class="work-position-wrap"><img src="../images/Screen-Shot-2021-08-03-at-10.37.36-PM.png" loading="lazy" sizes="100vw" srcset="../images/Screen-Shot-2021-08-03-at-10.37.36-PM-p-500.png 500w, ../images/Screen-Shot-2021-08-03-at-10.37.36-PM-p-800.png 800w, ../images/Screen-Shot-2021-08-03-at-10.37.36-PM-p-1080.png 1080w, ../images/Screen-Shot-2021-08-03-at-10.37.36-PM-p-1600.png 1600w, ../images/Screen-Shot-2021-08-03-at-10.37.36-PM.png 1606w" alt=""></div>
-      </div>
-      <div class="w-layout-grid project-description-grid-right">
-        <div id="w-node-b915ad84-715b-fc9d-8156-ee63d52fd223-0b5fff43" class="div-block-5">
-          <div class="position-name-text">Webflow</div>
-          <div class="paragraph-light cc-position-name">Brand Designer</div>
-          <div class="paragraph-tiny cc-paragraph-tiny-light">Apr 2014 - Mar 2015<br></div>
-        </div>
-        <div id="w-node-b915ad84-715b-fc9d-8156-ee63d52fd22b-0b5fff43" class="paragraph-light">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. <br>‍<br>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. <br>‍<br>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </div>
-      </div>
-    </div>
-  </div>
-  <div class="section"><img src="../images/B1---MEAM-Design-Day---TrailBlazer-4.jpg" width="920" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 99vw" srcset="../images/B1---MEAM-Design-Day---TrailBlazer-4-p-1080.jpeg 1080w, ../images/B1---MEAM-Design-Day---TrailBlazer-4-p-1600.jpeg 1600w, ../images/B1---MEAM-Design-Day---TrailBlazer-4-p-2000.jpeg 2000w, ../images/B1---MEAM-Design-Day---TrailBlazer-4-p-2600.jpeg 2600w, ../images/B1---MEAM-Design-Day---TrailBlazer-4-p-3200.jpeg 3200w, ../images/B1---MEAM-Design-Day---TrailBlazer-4.jpg 5471w" alt="" class="detail-image">
-    <div class="w-container"><img src="../images/B1---MEAM-Design-Day---TrailBlazer-1.jpg" width="920" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 94vw" srcset="../images/B1---MEAM-Design-Day---TrailBlazer-1-p-1080.jpeg 1080w, ../images/B1---MEAM-Design-Day---TrailBlazer-1-p-1600.jpeg 1600w, ../images/B1---MEAM-Design-Day---TrailBlazer-1-p-2000.jpeg 2000w, ../images/B1---MEAM-Design-Day---TrailBlazer-1-p-2600.jpeg 2600w, ../images/B1---MEAM-Design-Day---TrailBlazer-1-p-3200.jpeg 3200w, ../images/B1---MEAM-Design-Day---TrailBlazer-1.jpg 5123w" alt="" class="detail-image">
-      <p>Team TrailBlazer (Left to Right): Andres Zambrano, Emma Lee, Anthony Nardone, Christopher Mok, Nicholas McKnight</p>
     </div>
   </div>
   <div class="footer-wrap">
